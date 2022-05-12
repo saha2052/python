@@ -1,6 +1,6 @@
 # pull the official base image
 FROM python:3.8.3-alpine
-RUN sudo apt-get -q update && apt-get clean && apt-get install -y supervisor unzip nginx && rm -rf /var/lib/apt/lists/*
+RUN  apt-get update && apt-get upgrade -y && apt-get install -y supervisor unzip && rm -rf /var/lib/apt/lists/*
 
 # set work directory
 WORKDIR /usr/src/app
