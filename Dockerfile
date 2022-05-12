@@ -1,5 +1,5 @@
 # pull the official base image
-FROM python:3.8.3-alpine
+FROM python:3.7.4
 RUN  apt-get update && apt-get upgrade -y && apt-get install -y supervisor unzip
 
 # set work directory
