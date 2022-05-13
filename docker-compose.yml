@@ -1,7 +1,7 @@
 version: '3.1'
 
 services:
-  reactapp:
+  dataspacesapp:
     image: "dataspacesapp"
     restart: always # This will be ignored if we deploy in docker swarm
     ports:
